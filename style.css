@@ -1,0 +1,232 @@
+:root{
+    --ColorPrimary:#f5f5f5 ;
+    --ColorSecondary:#cecece ;
+    --ColorThirdary:#b0b0b0 ;
+    --ColorText:#252525 ;
+    --ColorBlacky:#1010100 ;
+    --ColorEffect:#f4ec12 ;
+    --ColorWhiteGradient: linear-gradient(45deg, #f5f5f5 0%, #dbdbdb 50%);
+}
+::-webkit-scrollbar{
+    background-color: #151515;
+}
+::-webkit-scrollbar-thumb {
+    background: #d9d9d9; /* Grey color */
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: "Tektur";
+    height: 100%;
+}
+.Home{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 95vh;
+    margin-top: 2vh;
+}
+.Outline{
+    color: var(--ColorPrimary);
+    font-size: 2vh;
+    text-align: center;
+    height: 95vh;
+    width: 98%;
+    outline: 1px solid var(--ColorThirdary);
+}
+.Outline h1{
+    margin-top: -4px;
+}
+.Outline h2{
+    text-align: center;
+    position: relative;
+    left: -95vh;
+    top: 73vh;
+    font-weight: 300;
+    font-size: 2vh;
+    color: var(--ColorThirdary);
+}
+.Outline h3{
+    font-weight: 300;
+    color: var(--ColorThirdary);
+    font-size: 2vh;
+    position: relative;
+    top: -15vh;
+    left: 170vh;
+    width: 50px;
+}
+.Outline h4{
+    position: relative;
+    top: 57vh;
+    left: 180vh;
+    width: 16vh;
+    font-size: 2vh;
+    font-weight: 300;
+    color: var(--ColorThirdary);
+}
+#CodeSpitter{
+    text-align: left;
+    font-size: 2vh;
+    width: 25vh;
+}
+#line{
+    width: 20vh;
+    margin-top: 2vh;
+    border: 1px solid var(--ColorThirdary);
+}
+/*Second */
+.About{
+    margin-top: 10vh;
+    color: var(--ColorPrimary);
+}
+.About hr{
+    border: 1px solid var(--ColorThirdary);
+    width: 90%;
+}
+.About h1{
+    font-size: 4vh;
+    position: relative;
+    top: 10vh;
+    left: 20vh;
+    width: 30vh;
+}
+.About h2{
+    position: relative;
+    top: 10vh;
+    left: 20vh;
+    text-align: left;
+    font-weight: 300;
+    width: 30vh;
+    font-size: 3vh;
+}
+.About h3{
+    position: relative;
+    top: 10vh;
+    left: 20vh;
+    text-align: left;
+    width: 150vh;
+    font-weight: 300;
+    font-size: 2vh;
+}
+.About button{
+    position: relative;
+    top: 15vh;
+    left: 20vh;
+    border: none;
+    width: 30vh;
+    height: 7vh;
+    background: none;
+    outline: 1px solid var(--ColorPrimary);
+    color: var(--ColorPrimary);
+    font-family: "Tektur";
+    z-index: 1;
+    transition: 1s ease-out;
+    font-size: 3vh;
+    overflow: hidden;
+}
+.About button:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    height: 100%;
+    transition: 0.5s ease;
+    width: 0%;
+    background: var(--ColorText);
+}
+.About button:hover::before{
+    cursor: pointer;
+    width: 100%;
+}
+button:hover{
+    cursor: pointer;
+}
+/* Work */
+.Work hr{
+    width: 90%;
+    margin-top: 40vh;
+    border: 1px solid var(--ColorThirdary);
+}
+.Work h1{
+    color: var(--ColorPrimary);
+    font-size: 4vh;
+    text-align: center;
+}
+.Work img{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 80vh;
+    height: 80vh;
+    position: relative;
+    left: 63vh;
+    margin-top: 3vh;
+}
+
+.Contact{
+    color: var(--ColorPrimary);
+    
+}
+.Contact input{
+    border: none;
+    color: var(--ColorText);
+    font-family: "Tektur";
+    background-color: var(--ColorThirdary);
+    position: relative;
+    left: 75vh;
+}
+.Contact textarea{
+    border: none;
+    color: var(--ColorText);
+    font-family: "Tektur";
+    background-color: var(--ColorThirdary);
+    position: relative;
+    top: 50vh;
+    left: 22vh;
+    width: 50vh;
+    height: 40vh;
+}
+.Contact input:focus, textarea:focus{
+    border: none;
+    outline: none;
+}
+input, textarea{
+    font-family: "Tektur";
+}
+button{
+    font-family: "Tektur";
+}
+.Contact button{
+    position: relative;
+    top: 60vh;
+    border: none;
+    background: none;
+    outline: 1px solid var(--ColorPrimary);
+    color: var(--ColorPrimary);
+    width: 30vh;
+    height: 5vh;
+    left: -19vh;
+    overflow: hidden;
+    font-size: 2vh;
+    z-index: 1;
+}
+.Contact button:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    height: 100%;
+    transition: 0.5s ease;
+    width: 0%;
+    background: var(--ColorText);
+}
+.Contact button:hover:before{
+    cursor: pointer;
+    width: 100%;
+}
+.secret h3{
+    margin-top: 60vh;
+    font-size: 3vh;
+}
